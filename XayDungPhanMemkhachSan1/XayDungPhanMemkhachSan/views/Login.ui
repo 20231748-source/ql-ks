@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect><x>0</x><y>0</y><width>420</width><height>380</height></rect>
+  </property>
+  <property name="windowTitle"><string>Login – Hotel Management</string></property>
+  <property name="styleSheet">
+   <string notr="true">QDialog {
+    background-color: #F7F5F0;
+}
+QLabel {
+    color: #1A2A4A;
+    font-size: 13px;
+    font-weight: bold;
+}
+QLineEdit {
+    background-color: #FFFFFF;
+    border: 1.5px solid #D1D5DB;
+    border-radius: 7px;
+    padding: 10px 12px;
+    font-size: 13px;
+    color: #1A2A4A;
+}
+QLineEdit:focus {
+    border: 1.5px solid #2F80ED;
+}
+QPushButton#BtnLogin {
+    background-color: #1A2A4A;
+    color: #FFFFFF;
+    padding: 10px;
+    border-radius: 7px;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+}
+QPushButton#BtnLogin:hover {
+    background-color: #C9A84C;
+    color: #1A2A4A;
+}
+QPushButton#BtnLogin:pressed {
+    background-color: #0F1B30;
+}</string>
+  </property>
+  <layout class="QVBoxLayout" name="dialogLayout">
+   <property name="leftMargin"><number>48</number></property>
+   <property name="rightMargin"><number>48</number></property>
+   <property name="topMargin"><number>36</number></property>
+   <property name="bottomMargin"><number>36</number></property>
+   <property name="spacing"><number>14</number></property>
+
+   <!-- Title -->
+   <item>
+    <widget class="QLabel" name="lbl_app_title">
+     <property name="styleSheet">
+      <string notr="true">color: #1A2A4A;
+font-size: 20px;
+font-weight: bold;
+padding-bottom: 8px;</string>
+     </property>
+     <property name="text"><string>🏨 HOTEL MANAGEMENT SYSTEM</string></property>
+     <property name="alignment"><set>Qt::AlignCenter</set></property>
+    </widget>
+   </item>
+
+   <!-- Divider -->
+   <item>
+    <widget class="QFrame" name="divider">
+     <property name="styleSheet"><string notr="true">background-color: #C9A84C;</string></property>
+     <property name="maximumSize"><size><width>16777215</width><height>2</height></size></property>
+     <property name="minimumSize"><size><width>0</width><height>2</height></size></property>
+     <property name="frameShape"><enum>QFrame::HLine</enum></property>
+    </widget>
+   </item>
+
+   <!-- Spacer -->
+   <item>
+    <spacer>
+     <property name="orientation"><enum>Qt::Vertical</enum></property>
+     <property name="sizeHint" stdset="0"><size><width>20</width><height>8</height></size></property>
+    </spacer>
+   </item>
+
+   <!-- Username -->
+   <item>
+    <widget class="QLabel" name="lbl_username">
+     <property name="text"><string>Tên đăng nhập</string></property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLineEdit" name="inp_username">
+     <property name="placeholderText"><string>Nhập tên đăng nhập...</string></property>
+    </widget>
+   </item>
+
+   <!-- Password -->
+   <item>
+    <widget class="QLabel" name="lbl_password">
+     <property name="text"><string>Mật khẩu</string></property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLineEdit" name="inp_password">
+     <property name="echoMode"><enum>QLineEdit::Password</enum></property>
+     <property name="placeholderText"><string>Nhập mật khẩu...</string></property>
+    </widget>
+   </item>
+
+   <!-- Spacer -->
+   <item>
+    <spacer>
+     <property name="orientation"><enum>Qt::Vertical</enum></property>
+     <property name="sizeHint" stdset="0"><size><width>20</width><height>8</height></size></property>
+    </spacer>
+   </item>
+
+   <!-- Login button -->
+   <item>
+    <widget class="QPushButton" name="BtnLogin">
+     <property name="text"><string>Đăng Nhập</string></property>
+     <property name="autoDefault"><bool>true</bool></property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
